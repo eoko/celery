@@ -1,0 +1,22 @@
+{
+  "name": "celery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqp": "^0.2.6",
+    "amqplib": "^0.5.1",
+    "eventemitter2": "^2.2.1",
+    "heartbeats": "^5.0.1",
+    "lodash": "latest",
+    "node-amqp": "^1.2.1",
+    "node-celery": "^0.2.8",
+    "pm2": "^2.3.0",
+    "uuid": "^3.0.1"
+  }
+}

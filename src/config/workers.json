@@ -1,0 +1,25 @@
+{
+  "workerQueue" : {
+    "prefix": "celeryev",
+    "args": {
+      "durable": false,
+      "autoDelete": true,
+      "arguments": {
+        "x-message-ttl": 5000,
+        "x-expires": 60000
+      }
+    },
+    "bind": {
+      "exchange": "celeryev",
+      "routingKey": "worker.#",
+      "args" : {
+        "durable": false,
+        "autoDelete": true,
+        "arguments": {
+          "x-message-ttl": 5000,
+          "x-expires": 60000
+        }
+      }
+    }
+  }
+}
